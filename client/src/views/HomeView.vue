@@ -1,18 +1,69 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <main class="main_image">
+      <img class="img_back" src="@/assets/img/background1.jpg" alt="" />
+      <div class="main_image_text">
+        <h1>동네를 검색 해주세요</h1>
+        <div class="address_search">
+          <div>
+            <input
+              type="text"
+              placeholder="동네를 검색해 주세요"
+              class="search_box"
+              :value="searchName"
+              @input="change"
+            />
+          </div>
+          <div class="similer_search" v-if="flag">
+            <p :key="result.area_idx" v-for="result in results.results">
+              {{ result.area }}
+            </p>
+          </div>
+        </div>
+        <a class="btn_search" @click="getResults()">동네검색</a>
+      </div>
+      <div class="main_text">
+        <h1>빵떠리 스토리</h1>
+        <p>
+          빵떠리 서비스는 마감시간을 통하여 유통기한이 임박한 제품을 저렴한
+          가격으로 빵을 제공하는 서비스 입니다.
+        </p>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+/* eslint-disable */
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
+  components: {},
+  data() {
+    return {
+      results: [],
+      searchName: '',
+      flag: false
+    }
+  },
+  setup() {},
+  created() {},
+  mounted() {},
+  unmounted() {},
+  methods: {
+    change(e) {
+      this.searchName = e.target.value
+    },
+    goToMenu(path) {
+      this.$router.push({ path: path })
+    },
+    // 동네검색 함수
+    async getResults() {
+      this.results = await this.$get(`/areas/search?name=${this.searchName}`)
+      this.flag = true
+    }
   }
 }
 </script>
+
+<style scoped>
+@import '@/assets/css/pages/homeview.css';
+</style>

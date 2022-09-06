@@ -1,0 +1,29 @@
+<template>
+  <header class="header">
+    <button class="logo">
+      <img src="@/assets/img/logo.png" alt="logo" />
+      <h4 class="logo_name">빵떠리</h4>
+    </button>
+    <button class="button btn_login">로그인</button>
+  </header>
+</template>
+<script>
+/* eslint-disable */
+export default {
+  components: {},
+  data() {
+    return {
+      sampleData: ''
+    }
+  },
+  setup() {},
+  created() {},
+  mounted() {},
+  unmounted() {},
+  methods: {}
+}
+</script>
+
+<style scoped>
+@import '@/assets/css/components/header.css';
+</style>
