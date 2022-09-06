@@ -1,26 +1,30 @@
 <template>
   <div class="home">
-    <main class="main_image">
-      <img class="img_back" src="@/assets/img/background1.jpg" alt="" />
+    <main>
       <div class="main_image_text">
         <h1>동네를 검색 해주세요</h1>
         <div class="address_search">
-          <div>
-            <input
-              type="text"
-              placeholder="동네를 검색해 주세요"
-              class="search_box"
-              :value="searchName"
-              @input="change"
-            />
-          </div>
+          <input
+            type="text"
+            placeholder="동네를 검색해 주세요"
+            class="search_box"
+            :value="searchName"
+            @input="change"
+            @keyup.enter="getResults()"
+          />
           <div class="similer_search" v-if="flag">
-            <p :key="result.area_idx" v-for="result in results.results">
+            <p
+              :key="result.area_idx"
+              v-for="result in results.results"
+              @click="searchName = result.area"
+            >
               {{ result.area }}
             </p>
           </div>
         </div>
-        <a class="btn_search" @click="getResults()">동네검색</a>
+        <div>
+          <a class="btn_search" @click="getResults()">동네검색</a>
+        </div>
       </div>
       <div class="main_text">
         <h1>빵떠리 스토리</h1>
