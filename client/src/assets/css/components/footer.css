@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  background-color: var(--color-bread-a);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+  font-size: 12px;
+}
+
+.footer_txt {
+  color: white;
+}
+
+.footer_img {
+  width: 8rem;
+}

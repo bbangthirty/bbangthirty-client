@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  background: var(--color-bread-b);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo_name {
+  margin: 0;
+}
+
+.logo {
+  border: none;
+  background-color: var(--color-bread-b);
+}
+
+.btn_login {
+  border: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  height: 50%;
+  width: auto;
+}
+
+.button {
+  padding: 5px;
+  background-color: var(--color-bread-a);
+  width: 120px;
+  border-radius: 10px;
+  color: white;
+}
