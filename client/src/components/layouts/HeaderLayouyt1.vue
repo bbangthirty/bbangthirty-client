@@ -1,10 +1,12 @@
 <template>
   <header class="header">
-    <button class="logo">
-      <img src="@/assets/img/logo.png" alt="logo" />
-      <h4 class="logo_name">빵떠리</h4>
-    </button>
-    <button class="button btn_login">로그인</button>
+    <div class="section">
+      <button class="logo">
+        <img src="@/assets/img/logo.png" alt="logo" />
+        <h4 class="logo_name">빵떠리</h4>
+      </button>
+      <button class="btn_login">로그인</button>
+    </div>
   </header>
 </template>
 <script>
