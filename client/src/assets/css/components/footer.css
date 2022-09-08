@@ -1,16 +1,17 @@
 .footer {
-  display: flex;
   background-color: var(--color-bread-a);
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 200px;
-  font-size: 12px;
-}
-
-.footer_txt {
-  color: white;
 }
 
 .footer_img {
-  width: 8rem;
+  width: 100px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: var(--font-micro);
+  color: white;
+  max-width: 1000px;
 }

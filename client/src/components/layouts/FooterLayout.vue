@@ -1,16 +1,14 @@
 <template>
-  <div>
-    <footer class="footer">
-      <div class="footer_txt">
-        Copyright © 빵떠리. 2022 All Rights Reserved.
-      </div>
+  <footer class="footer">
+    <div class="section">
+      <p>Copyright © 빵떠리. 2022 All Rights Reserved.</p>
       <img
         class="footer_img"
         src="@/assets/img/footer_logo.png"
         alt="footer_logo"
       />
-    </footer>
-  </div>
+    </div>
+  </footer>
 </template>
 <script>
 /* eslint-disable */
