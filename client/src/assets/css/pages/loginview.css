@@ -1,0 +1,63 @@
+.login {
+  background-color: var(--color-bread-b);
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo_img {
+  width: 80px;
+}
+
+.logo_name {
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 360px;
+  margin: auto;
+  height: 100vh;
+}
+
+.input_id,
+.input_pw {
+  width: 360px;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.btn_login {
+  width: 360px;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: var(--color-bread-a);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn_sign_up {
+  width: 360px;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: gray;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.id_pw_search,
+.id_pw_search a {
+  color: gray;
+  text-decoration: none;
+}

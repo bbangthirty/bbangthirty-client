@@ -1,14 +1,23 @@
 <template>
-  <header-layout />
+  <header-layout v-if="$route.path === '/'" />
   <router-view />
-  <footer-layout />
+  <footer-layout v-if="$route.path === '/'" />
 </template>
 <script>
 /* eslint-disable */
-// $route값으로 헤더 바꿀수 있음
 import HeaderLayout from '@/components/layouts/HeaderLayouyt1.vue'
 import FooterLayout from '@/components/layouts/FooterLayout.vue'
 export default {
-  components: { HeaderLayout, FooterLayout }
+  components: { HeaderLayout, FooterLayout },
+  data() {
+    return {
+      sampleData: ''
+    }
+  },
+  setup() {},
+  created() {},
+  mounted() {},
+  unmounted() {},
+  methods: {}
 }
 </script>
