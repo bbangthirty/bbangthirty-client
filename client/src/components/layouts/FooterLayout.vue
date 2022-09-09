@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="section">
+    <div class="footer_section">
       <p>Copyright © 빵떠리. 2022 All Rights Reserved.</p>
       <img
         class="footer_img"

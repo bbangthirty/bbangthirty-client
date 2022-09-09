@@ -6,7 +6,7 @@
   width: 100px;
 }
 
-.section {
+.footer_section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,4 +14,5 @@
   font-size: var(--font-micro);
   color: white;
   max-width: 1000px;
+  margin: auto;
 }

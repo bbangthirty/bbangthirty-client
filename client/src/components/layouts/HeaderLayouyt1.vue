@@ -1,11 +1,11 @@
 <template>
   <header class="header">
-    <div class="section">
-      <button class="logo">
+    <div class="header_section">
+      <button class="header_logo">
         <img src="@/assets/img/logo.png" alt="logo" />
-        <h4 class="logo_name">빵떠리</h4>
+        <h4 class="header_logo_name">빵떠리</h4>
       </button>
-      <button class="btn_login">로그인</button>
+      <button class="header_btn_login">로그인</button>
     </div>
   </header>
 </template>
