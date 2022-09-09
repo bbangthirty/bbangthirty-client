@@ -5,7 +5,7 @@
         <img src="@/assets/img/logo.png" alt="logo" />
         <h4 class="header_logo_name">빵떠리</h4>
       </button>
-      <button class="header_btn_login">로그인</button>
+      <button class="header_btn_login" @click="goToLogin()">로그인</button>
     </div>
   </header>
 </template>
@@ -22,7 +22,11 @@ export default {
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {}
+  methods: {
+    goToLogin() {
+      this.$router.push({ path: '/login' })
+    }
+  }
 }
 </script>
 
