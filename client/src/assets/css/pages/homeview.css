@@ -23,7 +23,7 @@
   border-radius: 10px;
   padding: 5px 10px;
   width: 400px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .btn_search {
@@ -34,12 +34,27 @@
   border: none;
   border-radius: 10px;
   float: right;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .similer_search {
-  width: 100%;
-  border: 1px solid rgb(217, 217, 217);
-  background-color: gray;
+  position: absolute;
+  width: 400px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: ivory;
+}
+
+.similer_search div {
+  padding: 10px 15px;
+  color: black;
+  font-size: var(--font-micro);
+}
+
+.similer_search div:hover {
+  background-color: var(--color-bread-a);
+  color: white;
 }
 
 .main_text {

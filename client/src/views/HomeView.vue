@@ -13,16 +13,16 @@
             @keyup.enter="getResults()"
           />
           <div class="similer_search" v-if="flag">
-            <p
+            <div
               :key="result.area_idx"
               v-for="result in results.results"
-              @click="searchName = result.area"
+              @click="getSearchName(result)"
             >
               {{ result.area }}
-            </p>
+            </div>
           </div>
           <div>
-            <a class="btn_search" @click="getResults()">동네검색</a>
+            <a class="btn_search" @click="movePage()">동네검색</a>
           </div>
         </div>
       </div>
@@ -45,7 +45,8 @@ export default {
     return {
       results: [],
       searchName: '',
-      flag: false
+      flag: false,
+      storedData: []
     }
   },
   setup() {},
@@ -62,8 +63,18 @@ export default {
     // 동네검색 함수
     async getResults() {
       const search = encodeURIComponent(this.searchName)
-      this.results = await this.$get(`/areas/search?name=${search}`)
+      this.results = await this.$get(`/areas/search/${search}`)
       this.flag = true
+    },
+    getSearchName(result) {
+      this.searchName = result.area
+      this.flag = false
+    },
+    movePage() {
+      this.storedData = this.results.results.filter(
+        (result) => result.area === this.searchName
+      )
+      console.log(this.storedData)
     }
   }
 }
