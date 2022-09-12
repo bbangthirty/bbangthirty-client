@@ -1,0 +1,46 @@
+.sign_up {
+  background-color: var(--color-bread-b);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign_up_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sign_up_logo_img {
+  width: 80px;
+}
+
+.sign_up_logo_name {
+  margin-top: 10px;
+  font-size: var(--font-medium);
+  font-weight: normal;
+}
+
+.btn_user {
+  font-size: var(--font-medium);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  background-color: var(--color-bread-a);
+  width: 360px;
+  height: 250px;
+  margin-right: 20px;
+}
+
+.btn_owner {
+  font-size: var(--font-medium);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  background-color: var(--color-grey);
+  width: 360px;
+  height: 250px;
+}
