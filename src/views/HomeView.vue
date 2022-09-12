@@ -22,7 +22,7 @@
             </div>
           </div>
           <div>
-            <a class="btn_search" @click="movePage()">동네검색</a>
+            <button class="btn_search" @click="movePage()">동네검색</button>
           </div>
         </div>
       </div>
