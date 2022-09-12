@@ -8,7 +8,7 @@
       <input type="text" class="input_id" placeholder="아이디" />
       <input type="password" class="input_pw" placeholder="비밀번호" />
       <button class="btn_login">로그인</button>
-      <button class="btn_sign_up">회원가입</button>
+      <button class="btn_sign_up" @click="goToSignup">회원가입</button>
       <div class="id_pw_search">
         <a href="#">아이디 찾기</a> | <a href="#">비밀번호 찾기</a>
       </div>
@@ -29,7 +29,11 @@ export default {
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {}
+  methods: {
+    goToSignup() {
+      this.$router.push({ path: '/login/signup' })
+    }
+  }
 }
 </script>
 
