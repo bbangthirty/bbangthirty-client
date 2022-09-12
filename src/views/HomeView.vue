@@ -81,5 +81,5 @@ export default {
 </script>
 
 <style scoped>
-@import '@/assets/css/pages/homeview.css';
+@import '@/assets/css/pages/HomeView.css';
 </style>

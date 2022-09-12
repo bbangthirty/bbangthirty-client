@@ -34,5 +34,5 @@ export default {
 </script>
 
 <style scoped>
-@import '@/assets/css/pages/loginview.css';
+@import '@/assets/css/pages/LoginView.css';
 </style>
