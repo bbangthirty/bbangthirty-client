@@ -5,7 +5,7 @@
       <h2 class="sign_up_logo_name">회원가입</h2>
     </div>
     <div>
-      <button class="btn_user">개인</button>
+      <button class="btn_user" @click="goToSignupUser">개인</button>
       <button class="btn_owner">관리자(점주)</button>
     </div>
   </div>
@@ -23,7 +23,11 @@ export default {
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {}
+  methods: {
+    goToSignupUser() {
+      this.$router.push({ path: '/login/signup/user' })
+    }
+  }
 }
 </script>
 
