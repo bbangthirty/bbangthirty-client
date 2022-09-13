@@ -6,7 +6,7 @@
     </div>
     <div>
       <button class="btn_user" @click="goToSignupUser">개인</button>
-      <button class="btn_owner">관리자(점주)</button>
+      <button class="btn_owner" @click="goToSignupOwner">관리자(점주)</button>
     </div>
   </div>
 </template>
@@ -26,6 +26,9 @@ export default {
   methods: {
     goToSignupUser() {
       this.$router.push({ path: '/login/signup/user' })
+    },
+    goToSignupOwner() {
+      this.$router.push({ path: '/login/signup/owner' })
     }
   }
 }
