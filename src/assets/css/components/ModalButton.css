@@ -1,0 +1,124 @@
+/* modal */
+.button {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  float: right;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 5% auto;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+/* header */
+.modal-header {
+  background: var(--color-bread-b);
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid black;
+}
+
+.close {
+  float: right;
+  font-size: 30px;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--color-bread-a);
+  cursor: pointer;
+}
+
+/* body */
+.modal-body {
+  padding: 10px 20px;
+  background: var(--color-bread-b);
+}
+
+.modal-body input,
+.modal-body textarea {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#store_detail {
+  height: 100px;
+}
+
+.modal-body label {
+  margin: 10px 0px;
+}
+
+.img_upload {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.send_code,
+.send_code_confirm,
+.address_search {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* footer */
+.modal-footer {
+  background: var(--color-bread-b);
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn_regist,
+.btn_close {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn_regist {
+  background-color: var(--color-bread-a);
+  margin-right: 10px;
+}
+
+.btn_close {
+  background-color: var(--color-grey);
+}

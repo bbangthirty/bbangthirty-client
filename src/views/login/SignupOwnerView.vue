@@ -32,8 +32,8 @@
           v-model.trim="user.user_pwd"
         />
       </div>
-      <div class="r_box">
-        <button>업체등록*</button>
+      <div>
+        <modal-button />
       </div>
     </div>
     <div class="sp_btn">
@@ -44,8 +44,9 @@
 </template>
 <script>
 /* eslint-disable */
+import ModalButton from '@/components/fragments/ModalButton.vue'
 export default {
-  components: {},
+  components: { ModalButton },
   data() {
     return {
       user: {
