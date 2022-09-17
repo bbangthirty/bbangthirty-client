@@ -4,7 +4,6 @@
   <footer-layout v-if="$route.path === '/'" />
 </template>
 <script>
-/* eslint-disable */
 import HeaderLayout from '@/components/layouts/HeaderLayouyt1.vue'
 import FooterLayout from '@/components/layouts/FooterLayout.vue'
 export default {

@@ -40,7 +40,6 @@
   </div>
 </template>
 <script>
-/* eslint-disable */
 export default {
   components: {},
   data() {
@@ -97,13 +96,13 @@ export default {
     async doCreate() {
       const loader = this.$loading.show()
 
-      const r = await this.$post('/users/join', {
-        param: {
-          user_nickname: this.user.user_nickname,
-          user_mail: this.user.user_mail,
-          user_pwd: this.user.user_pwd
-        }
-      })
+      // const r = await this.$post('/users/join', {
+      //   param: {
+      //     user_nickname: this.user.user_nickname,
+      //     user_mail: this.user.user_mail,
+      //     user_pwd: this.user.user_pwd
+      //   }
+      // })
 
       loader.hide()
     }
