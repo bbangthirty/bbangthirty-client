@@ -1,16 +1,3 @@
-/* modal */
-.button {
-  background-color: var(--color-bread-a);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-  width: 150px;
-  height: 40px;
-  margin-top: 10px;
-  float: right;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -29,8 +16,7 @@
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 
-.modal-header h2,
-.modal-footer h3 {
+.modal-header h2 {
   margin: 0;
 }
 
@@ -60,42 +46,6 @@
   background: var(--color-bread-b);
 }
 
-.modal-body input,
-.modal-body textarea {
-  display: block;
-  width: 100%;
-  height: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#store_detail {
-  height: 100px;
-}
-
-.modal-body label {
-  margin: 10px 0px;
-}
-
-.img_upload {
-  background-color: var(--color-bread-a);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-top: 10px;
-}
-
-.send_code,
-.send_code_confirm,
-.address_search {
-  background-color: var(--color-bread-a);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
-
 /* footer */
 .modal-footer {
   background: var(--color-bread-b);
@@ -104,21 +54,4 @@
   text-align: center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-}
-
-.btn_regist,
-.btn_close {
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-}
-
-.btn_regist {
-  background-color: var(--color-bread-a);
-  margin-right: 10px;
-}
-
-.btn_close {
-  background-color: var(--color-grey);
 }
