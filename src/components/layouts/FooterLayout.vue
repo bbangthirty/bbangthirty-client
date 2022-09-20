@@ -1,11 +1,11 @@
 <template>
   <footer class="footer">
-    <div class="footer_section">
+    <div class="footer-section">
       <p>Copyright © 빵떠리. 2022 All Rights Reserved.</p>
       <img
-        class="footer_img"
+        class="footer-img"
         src="@/assets/img/footer_logo.png"
-        alt="footer_logo"
+        alt="footer-logo"
       />
     </div>
   </footer>
@@ -27,5 +27,22 @@ export default {
 </script>
 
 <style scoped>
-@import '@/assets/css/components/footer.css';
+.footer {
+  background-color: var(--color-bread-a);
+}
+
+.footer-img {
+  width: 100px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: var(--font-micro);
+  color: white;
+  max-width: 1000px;
+  margin: auto;
+}
 </style>

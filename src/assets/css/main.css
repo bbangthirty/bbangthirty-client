@@ -1,5 +1,39 @@
-@import './base.css';
+/* Global */
+:root {
+  /* Main Color */
+  --color-bread-a: #683b28;
+  --color-bread-b: #f5f3ee;
+  --color-grey: #616161;
+  --color-bread-c: burlywood;
 
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Universal tags */
 * {
   box-sizing: border-box;
@@ -24,3 +58,464 @@ li {
 button {
   cursor: pointer;
 }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* HomeView.vue */
+.landing-page {
+  align-items: center;
+  margin: auto;
+}
+
+.main-text-contents {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.main-image-text {
+  background: url('@/assets/img/background1.jpg') center/cover no-repeat;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.search-box {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 400px;
+  margin-bottom: 2px;
+}
+
+.btn-search {
+  font-size: var(--font-micro);
+  background-color: var(--color-bread-b);
+  color: var(--color-bread-a);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  float: right;
+  margin-top: 10px;
+}
+
+.btn-search:hover {
+  background-color: var(--color-bread-a);
+  color: white;
+}
+
+.similer-search {
+  position: absolute;
+  width: 400px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: ivory;
+}
+
+.similer-search div {
+  padding: 10px 15px;
+  color: black;
+  font-size: var(--font-micro);
+}
+
+.similer-search div:hover {
+  background-color: var(--color-bread-a);
+  color: white;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-bread-b);
+  color: var(--color-bread-a);
+  height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+  .main-text-contents {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-text-contents {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-text-contents {
+    max-width: 320px;
+  }
+  .search-box,
+  .similer-search {
+    max-width: 320px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* LoginView.vue */
+.login {
+  background-color: var(--color-bread-b);
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 80px;
+}
+
+.logo-name {
+  margin-top: 10px;
+  text-align: center;
+  font-size: var(--font-medium);
+  font-weight: normal;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 360px;
+  margin: auto;
+  height: 100vh;
+}
+
+.input-id,
+.input-pw {
+  width: 360px;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.btn-login {
+  width: 360px;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: var(--color-bread-a);
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-sign-up {
+  width: 360px;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: gray;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-login:hover,
+.btn-sign-up:hover {
+  cursor: pointer;
+  background-color: var(--color-bread-c);
+}
+
+.id-pw-search,
+.id-pw-search a {
+  color: gray;
+  text-decoration: none;
+}
+
+.back-img {
+  position: fixed;
+  font-size: var(--font-large);
+  top: 20px;
+  left: 40px;
+  color: var(--color-bread-a);
+}
+
+.back-img:hover {
+  cursor: pointer;
+  color: var(--color-bread-c);
+}
+
+@media screen and (max-width: 576px) {
+  .section {
+    max-width: 300px;
+  }
+
+  .input-id,
+  .input-pw,
+  .btn-login,
+  .btn-sign-up {
+    width: 300px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* SignupView.vue */
+.sign-up {
+  background-color: var(--color-bread-b);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sign-up-logo-img {
+  width: 80px;
+}
+
+.sign-up-logo-name {
+  margin-top: 10px;
+  font-size: var(--font-medium);
+  font-weight: normal;
+}
+
+.btn-user {
+  font-size: var(--font-regular);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  background-color: var(--color-bread-a);
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.btn-owner {
+  font-size: var(--font-regular);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  background-color: var(--color-grey);
+  width: 300px;
+  height: 200px;
+}
+
+.btn-user:hover,
+.btn-owner:hover {
+  cursor: pointer;
+  background-color: var(--color-bread-c);
+}
+
+.back-img {
+  position: fixed;
+  font-size: var(--font-large);
+  top: 20px;
+  left: 40px;
+  color: var(--color-bread-a);
+}
+
+.back-img:hover {
+  cursor: pointer;
+  color: var(--color-bread-c);
+}
+
+.btn-box {
+  max-width: 650px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-user {
+    width: 200px;
+    height: 150px;
+  }
+
+  .btn-owner {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .btn-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-user {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* SignupUserView.vue */
+.sign-up-user {
+  background-color: var(--color-bread-b);
+  height: 100vh;
+  padding-top: 20vh;
+}
+
+.sp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid black;
+  max-width: 760px;
+  margin: auto;
+}
+
+.sp-input-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 760px;
+  margin: auto;
+}
+
+.t-box,
+.e-box,
+.p-box,
+.phone-box {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sp-input-box label {
+  flex: 20%;
+}
+
+.sp-input-box input {
+  flex: 70%;
+  height: 50px;
+  margin: auto;
+  padding: 5px;
+}
+
+.sp-btn {
+  display: flex;
+  justify-content: right;
+  max-width: 760px;
+  margin: auto;
+}
+
+.sp-btn button {
+  width: 380px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.sp-btn-ok {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.sp-btn-cancel {
+  background-color: var(--color-grey);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .sp-header,
+  .sp-input-box,
+  .sp-btn {
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sp-header,
+  .sp-input-box,
+  .sp-btn {
+    max-width: 560px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sp-header,
+  .sp-input-box,
+  .sp-btn {
+    max-width: 340px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* SignupOwnerView.vue */
+.sign-up-user {
+  background-color: var(--color-bread-b);
+  height: 100vh;
+  padding-top: 20vh;
+}
+
+.button {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  float: right;
+}
+
+.owner-modal-body input,
+.owner-modal-body textarea {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.owner-modal-body label {
+  margin: 10px 0px;
+}
+
+#store-detail {
+  height: 100px;
+}
+
+.img-upload {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.send-code,
+.send-code-confirm,
+.address-search {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn-regist,
+.btn-close {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn-regist {
+  background-color: var(--color-bread-a);
+  margin-right: 10px;
+}
+
+.btn-close {
+  background-color: var(--color-grey);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */

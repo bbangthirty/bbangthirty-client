@@ -1,11 +1,11 @@
 <template>
-  <div class="sign_up_user">
-    <div class="sp_header">
+  <div class="sign-up-user">
+    <div class="sp-header">
       <h2>회원가입</h2>
       <p>*필수입력</p>
     </div>
-    <div class="sp_input_box">
-      <div class="t_box">
+    <div class="sp-input-box">
+      <div class="t-box">
         <label for="userNickname">Nickname</label>
         <input
           type="text"
@@ -14,7 +14,7 @@
           v-model.trim="user.user_nickname"
         />
       </div>
-      <div class="e_box">
+      <div class="e-box">
         <label for="userEmail">Email</label>
         <input
           type="email"
@@ -23,7 +23,7 @@
           v-model.trim="user.user_mail"
         />
       </div>
-      <div class="p_box">
+      <div class="p-box">
         <label for="userPw">Password</label>
         <input
           type="password"
@@ -32,7 +32,7 @@
           v-model.trim="user.user_pwd"
         />
       </div>
-      <div class="phone_box">
+      <div class="phone-box">
         <label for="userTel">Phone</label>
         <input
           type="tel"
@@ -42,9 +42,9 @@
         />
       </div>
     </div>
-    <div class="sp_btn">
-      <button class="sp_btn_ok" @click="doSave">회원가입</button>
-      <button class="sp_btn_cancel" @click="goToSignup">취소</button>
+    <div class="sp-btn">
+      <button class="sp-btn-ok" @click="doSave">회원가입</button>
+      <button class="sp-btn-cancel" @click="goToSignup">취소</button>
     </div>
   </div>
 </template>
@@ -142,7 +142,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-@import '@/assets/css/pages/SignupUserView.css';
-</style>

@@ -1,20 +1,20 @@
 <template>
-  <div class="back_img" @click="goToLogin">
+  <div class="back-img" @click="goToLogin">
     <font-awesome-icon icon="fa-solid fa-arrow-left" />
   </div>
-  <div class="sign_up">
-    <div class="sign_up_logo">
+  <div class="sign-up">
+    <div class="sign-up-logo">
       <img
         src="@/assets/img/logo.png"
         alt="logo"
-        class="sign_up_logo_img"
+        class="sign-up-logo-img"
         @click="goToHome"
       />
-      <h2 class="sign_up_logo_name">회원가입</h2>
+      <h2 class="sign-up-logo-name">회원가입</h2>
     </div>
-    <div class="btn_box">
-      <button class="btn_user" @click="goToSignupUser">개인</button>
-      <button class="btn_owner" @click="goToSignupOwner">관리자(점주)</button>
+    <div class="btn-box">
+      <button class="btn-user" @click="goToSignupUser">개인</button>
+      <button class="btn-owner" @click="goToSignupOwner">관리자(점주)</button>
     </div>
   </div>
 </template>
@@ -46,7 +46,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-@import '@/assets/css/pages/SignupView.css';
-</style>

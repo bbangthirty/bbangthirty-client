@@ -1,28 +1,28 @@
 <template>
-  <div class="back_img" @click="goToLogin">
+  <div class="back-img" @click="goToLogin">
     <font-awesome-icon icon="fa-solid fa-arrow-left" />
   </div>
   <div class="login">
     <div class="section">
       <a class="logo">
-        <img src="@/assets/img/logo.png" alt="logo" class="logo_img" />
-        <h2 class="logo_name">빵떠리</h2>
+        <img src="@/assets/img/logo.png" alt="logo" class="logo-img" />
+        <h2 class="logo-name">빵떠리</h2>
       </a>
       <input
         type="text"
-        class="input_id"
+        class="input-id"
         placeholder="아이디"
         v-model.trim="user.user_mail"
       />
       <input
         type="password"
-        class="input_pw"
+        class="input-pw"
         placeholder="비밀번호"
         v-model.trim="user.user_pwd"
       />
-      <button class="btn_login" @click="checkLogin">로그인</button>
-      <button class="btn_sign_up" @click="goToSignup">회원가입</button>
-      <div class="id_pw_search">
+      <button class="btn-login" @click="checkLogin">로그인</button>
+      <button class="btn-sign-up" @click="goToSignup">회원가입</button>
+      <div class="id-pw-search">
         <a href="#">아이디 찾기</a> | <a href="#">비밀번호 찾기</a>
       </div>
     </div>
@@ -66,7 +66,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-@import '@/assets/css/pages/LoginView.css';
-</style>
