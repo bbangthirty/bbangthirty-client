@@ -133,6 +133,51 @@ button {
   height: 100vh;
 }
 
+.current-location-box .location {
+  font-size: var(--font-medium);
+  position: relative;
+  bottom: -5px;
+  margin-left: 10px;
+}
+
+.current-location-box .location-detail {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.current-location-box::after {
+  content: '';
+  display: block;
+  width: 1000px;
+  border-bottom: 1px solid black;
+}
+
+.card-area {
+  margin-top: 20px;
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-box {
+  background-color: var(--color-bread-b);
+  width: 300px;
+  height: 400px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px #999;
+  padding: 25px;
+}
+
+.card-box .card-img img {
+  width: 250px;
+  height: 250px;
+}
+
+.card-box .card-text {
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 992px) {
   .main-text-contents {
     max-width: 700px;

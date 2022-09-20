@@ -27,6 +27,42 @@
         </div>
       </div>
       <div class="main-text">
+        <div class="current-location-box">
+          <font-awesome-icon icon="fa-solid fa-location-dot" class="location" />
+          <p class="location-detail">경상남도 진주시 신안동</p>
+        </div>
+        <div class="card-area">
+          <div class="card-box">
+            <div class="card-img">
+              <img src="@/assets/img/bread_1.png" alt="" />
+            </div>
+            <div class="card-text">
+              <div class="card-store-name">양우연케익하우스</div>
+              <div class="card-store-endtime">오후 10:00 마감</div>
+              <div class="card-store-menu">#소보루, #단팥빵</div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card-img">
+              <img src="@/assets/img/bread_1.png" alt="" />
+            </div>
+            <div class="card-text">
+              <div class="card-store-name">양우연케익하우스</div>
+              <div class="card-store-endtime">오후 10:00 마감</div>
+              <div class="card-store-menu">#소보루, #단팥빵</div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card-img">
+              <img src="@/assets/img/bread_1.png" alt="" />
+            </div>
+            <div class="card-text">
+              <div class="card-store-name">양우연케익하우스</div>
+              <div class="card-store-endtime">오후 10:00 마감</div>
+              <div class="card-store-menu">#소보루, #단팥빵</div>
+            </div>
+          </div>
+        </div>
         <h1>빵떠리 스토리</h1>
         <p class="main-text-contents">
           빵떠리 서비스는 마감시간을 통하여 유통기한이 임박한 제품을 저렴한
