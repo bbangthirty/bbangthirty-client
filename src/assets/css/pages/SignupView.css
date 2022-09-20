@@ -1,0 +1,96 @@
+.sign_up {
+  background-color: var(--color-bread-b);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign_up_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sign_up_logo_img {
+  width: 80px;
+}
+
+.sign_up_logo_name {
+  margin-top: 10px;
+  font-size: var(--font-medium);
+  font-weight: normal;
+}
+
+.btn_user {
+  font-size: var(--font-regular);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  background-color: var(--color-bread-a);
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.btn_owner {
+  font-size: var(--font-regular);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  background-color: var(--color-grey);
+  width: 300px;
+  height: 200px;
+}
+
+.btn_user:hover,
+.btn_owner:hover {
+  cursor: pointer;
+  background-color: var(--color-bread-c);
+}
+
+.back_img {
+  position: fixed;
+  font-size: var(--font-large);
+  top: 20px;
+  left: 40px;
+  color: var(--color-bread-a);
+}
+
+.back_img:hover {
+  cursor: pointer;
+  color: var(--color-bread-c);
+}
+
+.btn_box {
+  max-width: 650px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .btn_user {
+    width: 200px;
+    height: 150px;
+  }
+
+  .btn_owner {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 430px) {
+  .btn_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn_user {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+.footer {
+  background-color: var(--color-bread-a);
+}
+
+.footer_img {
+  width: 100px;
+}
+
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: var(--font-micro);
+  color: white;
+  max-width: 1000px;
+  margin: auto;
+}

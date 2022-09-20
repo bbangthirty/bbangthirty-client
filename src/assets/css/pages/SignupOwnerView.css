@@ -1,0 +1,163 @@
+.sign_up_user {
+  background-color: var(--color-bread-b);
+  height: 100vh;
+  padding-top: 20vh;
+}
+
+.sp_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid black;
+  max-width: 760px;
+  margin: auto;
+}
+
+.sp_input_box {
+  display: flex;
+  flex-direction: column;
+  max-width: 760px;
+  margin: auto;
+}
+
+.t_box,
+.e_box,
+.p_box {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sp_input_box label {
+  flex: 20%;
+}
+
+#userNickname,
+#userEmail,
+#userPw {
+  flex: 70%;
+  height: 50px;
+  margin: auto;
+  padding: 5px;
+}
+
+.sp_btn {
+  display: flex;
+  justify-content: right;
+  max-width: 760px;
+  margin: auto;
+}
+
+.sp_btn button {
+  width: 380px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.sp_btn_ok {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.sp_btn_cancel {
+  background-color: var(--color-grey);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* modal */
+.button {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  float: right;
+}
+
+.owner_modal_body input,
+.owner_modal_body textarea {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.owner_modal_body label {
+  margin: 10px 0px;
+}
+
+#store_detail {
+  height: 100px;
+}
+
+.img_upload {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.send_code,
+.send_code_confirm,
+.address_search {
+  background-color: var(--color-bread-a);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn_regist,
+.btn_close {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn_regist {
+  background-color: var(--color-bread-a);
+  margin-right: 10px;
+}
+
+.btn_close {
+  background-color: var(--color-grey);
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+  .sp_header,
+  .sp_input_box,
+  .sp_btn {
+    max-width: 750px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .sp_header,
+  .sp_input_box,
+  .sp_btn {
+    max-width: 560px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) {
+  .sp_header,
+  .sp_input_box,
+  .sp_btn {
+    max-width: 340px;
+  }
+}
