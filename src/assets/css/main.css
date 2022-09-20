@@ -41,6 +41,7 @@
 
 body {
   margin: 0px;
+  background-color: var(--color-bread-b);
 }
 
 a {
@@ -564,3 +565,23 @@ button {
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* DongneStoreView.vue */
+.dongne-contents {
+  height: 100vh;
+}
+
+.dongne-contents-box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dongne-contents-box .card-area {
+  flex-wrap: wrap;
+}
+
+.dongne-contents-box .card-area .card-box {
+  margin-bottom: 15px;
+}

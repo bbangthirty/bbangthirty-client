@@ -37,6 +37,14 @@ const routes = [
       import(
         /* webpackChunkName: "login" */ '../views/login/SignupOwnerView.vue'
       )
+  },
+  {
+    path: '/dongne',
+    name: 'DongneStoreView',
+    component: () =>
+      import(
+        /* webpackChunkName: "user" */ '../views/userPage/DongneStoreView.vue'
+      )
   }
 ]
 

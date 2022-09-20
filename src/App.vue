@@ -1,13 +1,15 @@
 <template>
-  <header-layout v-if="$route.path === '/'" />
+  <header-layout-one v-if="$route.path === '/'" />
+  <header-layout-two v-if="$route.path === '/dongne'" />
   <router-view />
-  <footer-layout v-if="$route.path === '/'" />
+  <footer-layout />
 </template>
 <script>
-import HeaderLayout from '@/components/layouts/HeaderLayouyt1.vue'
+import HeaderLayoutOne from '@/components/layouts/HeaderLayout1.vue'
+import HeaderLayoutTwo from '@/components/layouts/HeaderLayout2.vue'
 import FooterLayout from '@/components/layouts/FooterLayout.vue'
 export default {
-  components: { HeaderLayout, FooterLayout },
+  components: { HeaderLayoutOne, HeaderLayoutTwo, FooterLayout },
   data() {
     return {
       sampleData: ''

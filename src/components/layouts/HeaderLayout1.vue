@@ -1,10 +1,9 @@
 <template>
   <header class="header">
     <div class="header-section">
-      <button class="header-logo">
-        <img src="@/assets/img/logo.png" alt="logo" />
-        <h4 class="header-logo-name">빵떠리</h4>
-      </button>
+      <a class="header-logo">
+        <img src="@/assets/img/logo2.png" alt="logo" />
+      </a>
       <button class="header-btn-login" @click="goToLogin()">로그인</button>
     </div>
   </header>
@@ -43,9 +42,8 @@ export default {
   max-width: 1000px;
 }
 
-.header-logo {
-  border: none;
-  background-color: var(--color-bread-b);
+.header-logo img {
+  width: 50px;
   cursor: pointer;
 }
 

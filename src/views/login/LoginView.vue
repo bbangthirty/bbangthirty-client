@@ -5,8 +5,7 @@
   <div class="login">
     <div class="section">
       <a class="logo">
-        <img src="@/assets/img/logo.png" alt="logo" class="logo-img" />
-        <h2 class="logo-name">빵떠리</h2>
+        <img src="@/assets/img/logo2.png" alt="logo" class="logo-img" />
       </a>
       <input
         type="text"

@@ -29,6 +29,8 @@ export default {
 <style scoped>
 .footer {
   background-color: var(--color-bread-a);
+  width: 100%;
+  height: 120px;
 }
 
 .footer-img {
