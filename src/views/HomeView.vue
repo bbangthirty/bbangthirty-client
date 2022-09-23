@@ -81,12 +81,21 @@ export default {
       results: [],
       searchName: '',
       flag: false,
-      storedData: []
+      storedData: [],
+      latitude: '',
+      longitude: '',
+      areaName: ''
     }
   },
   setup() {},
-  created() {},
-  mounted() {},
+  created() {
+    this.getGeoLocation()
+  },
+  mounted() {
+    if (!window.kakao || !window.kakao.maps) {
+      this.loadScript()
+    }
+  },
   unmounted() {},
   methods: {
     change(e) {
@@ -110,6 +119,48 @@ export default {
         (result) => result.area === this.searchName
       )
       console.log(this.storedData)
+    },
+    // KakaoMap API
+    loadScript() {
+      const script = document.createElement('script')
+      script.src =
+        '//dapi.kakao.com/v2/maps/sdk.js?appkey=34b37d522b65d1df15d4d56c54871b18&libraries=services&autoload=false'
+      document.head.appendChild(script)
+      script.onload = () => window.kakao.maps.load(this.currentLocation)
+    },
+    currentLocation() {
+      const geocoder = new window.kakao.maps.services.Geocoder()
+      const callback = function (result, status) {
+        if (status === window.kakao.maps.services.Status.OK) {
+          // 질문 : this.areaName = result[0].address_name 을 하고싶은데 콜백함수여서 데이터 저장이 안되는데 방법이 뭐가있는지?
+          console.log('지역 명칭 : ' + result[0].address_name)
+          console.log('행정구역 코드 : ' + result[0].code)
+          this.saveArea(result[0].address_name)
+        }
+      }
+      geocoder.coord2RegionCode(this.longitude, this.latitude, callback)
+    },
+    // GeoLocation API
+    getGeoLocation() {
+      // 지오로케이션
+      const options = {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0
+      }
+      navigator.geolocation.getCurrentPosition(
+        this.success,
+        this.error,
+        options
+      )
+    },
+    success(pos) {
+      const crd = pos.coords
+      this.latitude = crd.latitude
+      this.longitude = crd.longitude
+    },
+    error(err) {
+      console.warn(`ERROR(${err.code}): ${err.message}`)
     }
   }
 }
