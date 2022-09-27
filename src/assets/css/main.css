@@ -492,62 +492,6 @@ button {
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* SignupOwnerView.vue */
-.sign-up-user {
-  background-color: var(--color-bread-b);
-  height: 100vh;
-  padding-top: 20vh;
-}
-
-.button {
-  background-color: var(--color-bread-a);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-  width: 150px;
-  height: 40px;
-  margin-top: 10px;
-  float: right;
-}
-
-.img-upload {
-  background-color: var(--color-bread-a);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-top: 10px;
-}
-
-.send-code,
-.send-code-confirm,
-.address-search {
-  background-color: var(--color-bread-a);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
-
-.btn-regist,
-.btn-close {
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-}
-
-.btn-regist {
-  background-color: var(--color-bread-a);
-  margin-right: 10px;
-}
-
-.btn-close {
-  background-color: var(--color-grey);
-}
-
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* DongneStoreView.vue */
 .dongne-contents {
   height: 100vh;
