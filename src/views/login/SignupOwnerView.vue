@@ -41,86 +41,6 @@
           v-model.trim="user.user_phone"
         />
       </div>
-      <div>
-        <button class="button" @click="openModal">업체등록*</button>
-        <!-- Slot으로 모달구현 -->
-        <slot-modal modalButton="signupModal">
-          <template v-slot:title>업체등록</template>
-          <template v-slot:body>
-            <div class="owner-modal-body">
-              <div>
-                <label for="store-name">업체명을 입력해주세요*</label>
-                <input type="text" id="store-name" placeholder="업체명" />
-              </div>
-              <br />
-              <div>
-                <label for="store-tel">업체 전화번호를 입력해주세요*</label>
-                <input
-                  type="tel"
-                  id="store-tel"
-                  placeholder="숫자만 입력하세요"
-                />
-                <button class="send-code">인증번호 전송</button>
-                <input
-                  type="text"
-                  id=""
-                  placeholder="인증번호를 등록해주세요"
-                />
-                <button class="send-code-confirm">확인</button>
-              </div>
-              <br />
-              <div>
-                <label for="store-address">주소를 입력해주세요*</label>
-                <input
-                  type="text"
-                  id="store-address-code"
-                  placeholder="우편번호"
-                />
-                <button class="address-search">검색</button>
-                <input type="text" id="store-address" placeholder="주소" />
-                <input
-                  type="text"
-                  id="store-address-detail"
-                  placeholder="상세주소"
-                />
-              </div>
-              <br />
-              <div>
-                <label for="store-detail"
-                  >찾아오시는 설명이 필요하신가요?</label
-                >
-                <textarea
-                  id="store-detail"
-                  placeholder="예)역삼역 6번출구에서 나와 200m 직진하면 우측에 보이는 다이소 건물 1층입니다."
-                  rows="5"
-                  cols="33"
-                  style="resize: none"
-                ></textarea>
-              </div>
-              <br />
-              <div>
-                <label for="store-detail-img"
-                  >업체 상세정보에 들어갈 이미지를 등록해주세요*</label
-                >
-                <div>
-                  <button class="img-upload">이미지 업로드</button>
-                  <input
-                    type="file"
-                    name=""
-                    id="store-detail-img"
-                    style="display: none"
-                  />
-                </div>
-              </div>
-              <br />
-            </div>
-          </template>
-          <template v-slot:footer>
-            <button class="btn-regist">등록</button>
-            <button class="btn-close" @click="closeModal">취소</button>
-          </template>
-        </slot-modal>
-      </div>
     </div>
     <div class="sp-btn">
       <button class="sp-btn-ok" @click="doSave">회원가입</button>
@@ -129,9 +49,7 @@
   </div>
 </template>
 <script>
-import SlotModal from '@/components/fragments/SlotModal.vue'
 export default {
-  components: { 'slot-modal': SlotModal },
   data() {
     return {
       user: {
@@ -215,18 +133,6 @@ export default {
       })
 
       loader.hide()
-    },
-
-    // Open
-    openModal() {
-      const modal = document.querySelector('#my-modal')
-      console.log(modal)
-      modal.style.display = 'block'
-    },
-    // Close
-    closeModal() {
-      const modal = document.querySelector('#my-modal')
-      modal.style.display = 'none'
     }
   }
 }

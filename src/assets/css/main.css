@@ -511,23 +511,6 @@ button {
   float: right;
 }
 
-.owner-modal-body input,
-.owner-modal-body textarea {
-  display: block;
-  width: 100%;
-  height: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.owner-modal-body label {
-  margin: 10px 0px;
-}
-
-#store-detail {
-  height: 100px;
-}
-
 .img-upload {
   background-color: var(--color-bread-a);
   color: white;
