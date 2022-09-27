@@ -45,7 +45,7 @@ export default {
   unmounted() {},
   methods: {
     goToSignup() {
-      this.$router.push({ path: '/login/signup' })
+      this.$router.push({ path: '/login/signup/user' })
     },
     goToLogin() {
       this.$router.push({ path: '/' })

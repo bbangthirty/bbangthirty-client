@@ -44,7 +44,7 @@
     </div>
     <div class="sp-btn">
       <button class="sp-btn-ok" @click="doSave">회원가입</button>
-      <button class="sp-btn-cancel" @click="goToSignup">취소</button>
+      <button class="sp-btn-cancel" @click="goToLogin">취소</button>
     </div>
   </div>
 </template>
@@ -66,8 +66,8 @@ export default {
   mounted() {},
   unmounted() {},
   methods: {
-    goToSignup() {
-      this.$router.push({ path: '/login/signup' })
+    goToLogin() {
+      this.$router.push({ path: '/login' })
     },
     async doSave() {
       // 유효성 검사
@@ -119,7 +119,6 @@ export default {
         )
       }
 
-      // 저장함수 만들었는데 회원가입 안됨 -> 해결해야함
       this.doCreate()
     },
 
