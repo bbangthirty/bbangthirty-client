@@ -411,7 +411,10 @@ button {
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* DongneStoreView.vue */
 .dongne-contents {
-  height: 100vh;
+  /* footer고정용 */
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 120px;
 }
 
 .dongne-contents-box {

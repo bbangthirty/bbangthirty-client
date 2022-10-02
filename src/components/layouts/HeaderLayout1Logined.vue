@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header-section">
-      <a class="header-logo">
+      <a class="header-logo" href="/">
         <img src="@/assets/img/logo2.png" alt="logo" />
       </a>
       <div class="profile_section">
