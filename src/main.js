@@ -11,7 +11,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faUserSecret,
   faArrowLeft,
-  faLocationDot
+  faLocationDot,
+  faCircleXmark,
+  faPlus
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -20,6 +22,8 @@ import './assets/css/main.css'
 library.add(faUserSecret)
 library.add(faArrowLeft)
 library.add(faLocationDot)
+library.add(faCircleXmark)
+library.add(faPlus)
 
 const app = createApp(App)
 // fontawsome을 vue 컴포넌트로 사용할 준비 완료

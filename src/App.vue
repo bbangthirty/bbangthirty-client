@@ -1,6 +1,6 @@
 <template>
   <header-layout-one v-if="$route.path === '/'" />
-  <header-layout-one-logined v-if="$route.path === '/user/landing/regist'" />
+  <header-layout-one-logined v-if="$route.path === '/dongne/landing/regist'" />
   <header-layout-two v-if="$route.path === '/dongne'" />
   <router-view />
   <footer-layout />

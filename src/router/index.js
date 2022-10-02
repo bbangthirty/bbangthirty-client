@@ -31,6 +31,14 @@ const routes = [
       import(
         /* webpackChunkName: "user" */ '../views/userPage/DongneStoreView.vue'
       )
+  },
+  {
+    path: '/dongne/landing/regist',
+    name: 'DongneRegistView',
+    component: () =>
+      import(
+        /* webpackChunkName: "user" */ '../views/userPage/DongneRegistView.vue'
+      )
   }
 ]
 
