@@ -64,4 +64,11 @@ export default {
   cursor: pointer;
   background-color: var(--color-bread-c);
 }
+
+header::after {
+  content: '';
+  display: block;
+  height: 1px;
+  box-shadow: 3px 3px 3px 3px #999;
+}
 </style>

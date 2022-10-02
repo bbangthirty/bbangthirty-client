@@ -85,4 +85,11 @@ export default {
 a {
   color: var(--color-bread-a);
 }
+
+header::after {
+  content: '';
+  display: block;
+  height: 1px;
+  box-shadow: 3px 3px 3px 3px #999;
+}
 </style>
