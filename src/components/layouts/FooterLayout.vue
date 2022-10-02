@@ -31,6 +31,8 @@ export default {
   background-color: var(--color-bread-a);
   width: 100%;
   height: 120px;
+  position: relative;
+  transform: translateY(-100%);
 }
 
 .footer-img {
