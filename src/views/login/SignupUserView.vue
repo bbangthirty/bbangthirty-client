@@ -6,12 +6,12 @@
     </div>
     <div class="sp-input-box">
       <div class="t-box">
-        <label for="userNickname">Nickname</label>
+        <label for="userName">UserName</label>
         <input
           type="text"
-          id="userNickname"
+          id="userName"
           placeholder="닉네임 입력*"
-          v-model.trim="user.user_nickname"
+          v-model.trim="user.user_name"
         />
       </div>
       <div class="e-box">
@@ -54,7 +54,7 @@ export default {
   data() {
     return {
       user: {
-        user_nickname: '',
+        user_name: '',
         user_mail: '',
         user_pwd: '',
         user_phone: ''
@@ -71,7 +71,7 @@ export default {
     },
     async doSave() {
       // 유효성 검사
-      if (this.user.user_nickname === '') {
+      if (this.user.user_name === '') {
         return this.$swal(
           '닉네임을 입력하세요',
           '닉네임은 필수 입력값입니다',
@@ -127,7 +127,7 @@ export default {
 
       await this.$post('/users/join', {
         user_info: {
-          user_nickname: this.user.user_nickname,
+          user_name: this.user.user_name,
           user_mail: this.user.user_mail,
           user_pwd: this.user.user_pwd,
           user_phone: this.user.user_phone
