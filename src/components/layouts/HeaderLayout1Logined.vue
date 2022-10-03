@@ -10,6 +10,7 @@
         <button class="header-btn-login" @click="goToLogin()">로그아웃</button>
       </div>
     </div>
+    <hr style="width: 100%; height: 1.5px; background-color: #683b28" />
   </header>
 </template>
 <script>
@@ -84,12 +85,5 @@ export default {
 
 a {
   color: var(--color-bread-a);
-}
-
-header::after {
-  content: '';
-  display: block;
-  height: 1px;
-  box-shadow: 3px 3px 3px 3px #999;
 }
 </style>

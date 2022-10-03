@@ -559,6 +559,10 @@ p {
   padding: 20px 20px;
   margin: auto;
   max-width: 1000px;
+  /* footer고정용 */
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 120px;
 }
 
 .mypage-side {

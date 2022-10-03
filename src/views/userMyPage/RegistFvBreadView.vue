@@ -1,5 +1,4 @@
 <template>
-  <hr style="width: 100%; height: 1.5px; background-color: #683b28" />
   <div class="mypage">
     <div class="mypage-side">
       <div class="mypage-profile">

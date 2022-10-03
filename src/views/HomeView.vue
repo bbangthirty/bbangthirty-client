@@ -29,7 +29,7 @@
       <div class="main-text">
         <div class="current-location-box">
           <font-awesome-icon icon="fa-solid fa-location-dot" class="location" />
-          <p class="location-detail">경상남도 진주시 신안동</p>
+          <p class="location-detail">{{ areaName }}</p>
         </div>
         <div class="card-area">
           <div class="card-box">
@@ -130,9 +130,9 @@ export default {
     },
     currentLocation() {
       const geocoder = new window.kakao.maps.services.Geocoder()
-      const callback = function (result, status) {
+      const callback = (result, status) => {
         if (status === window.kakao.maps.services.Status.OK) {
-          // 질문 : this.areaName = result[0].address_name 을 하고싶은데 콜백함수여서 데이터 저장이 안되는데 방법이 뭐가있는지?
+          this.areaName = result[0].address_name
           console.log('지역 명칭 : ' + result[0].address_name)
           console.log('행정구역 코드 : ' + result[0].code)
         }

@@ -12,6 +12,7 @@
         </div>
       </div>
     </div>
+    <hr style="width: 100%; height: 1.5px; background-color: #683b28" />
   </header>
 </template>
 <script>
@@ -44,13 +45,6 @@ export default {
   max-width: 1000px;
 }
 
-header::after {
-  content: '';
-  display: block;
-  height: 1px;
-  box-shadow: 3px 3px 3px 3px #999;
-}
-
 .header-logo img {
   width: 50px;
   cursor: pointer;
@@ -64,5 +58,10 @@ header::after {
   height: 40px;
   border: none;
   border-radius: 10px;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 </style>
