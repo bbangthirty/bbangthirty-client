@@ -44,7 +44,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 html,
 body {
   height: 100%;
@@ -53,9 +52,8 @@ body {
 #app {
   height: 100%;
 }
-=======
+
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
->>>>>>> feature/mypage
 
 body {
   font-family: 'Dongle', sans-serif;
@@ -479,7 +477,6 @@ p {
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
-<<<<<<< HEAD
 /* DongneRegistView.vue */
 .dongne-regist-container {
   display: flex;
@@ -553,8 +550,10 @@ p {
   border-radius: 10px;
   color: white;
   font-size: var(--font-regular);
-=======
+}
+
 /* User MyPage */
+
 .mypage {
   display: flex;
   padding: 20px 20px;
@@ -646,5 +645,4 @@ p {
   padding: 5px 15px;
   margin: 7px;
   border-radius: 10px;
->>>>>>> feature/mypage
 }

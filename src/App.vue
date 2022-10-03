@@ -1,10 +1,7 @@
 <template>
   <header-layout-one v-if="$route.path === '/'" />
-<<<<<<< HEAD
   <header-layout-one-logined v-if="$route.path === '/dongne/landing/regist'" />
-=======
   <header-layout-one v-if="$route.path === '/mypage'" />
->>>>>>> feature/mypage
   <header-layout-two v-if="$route.path === '/dongne'" />
   <router-view />
   <footer-layout />
