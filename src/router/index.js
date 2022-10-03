@@ -31,6 +31,38 @@ const routes = [
       import(
         /* webpackChunkName: "user" */ '../views/userPage/DongneStoreView.vue'
       )
+  },
+  {
+    path: '/mypage',
+    name: 'DongneSettingView',
+    component: () =>
+      import(
+        /* webpackChunkName: "mypage" */ '../views/userMyPage/DongneSettingView.vue'
+      )
+  },
+  {
+    path: '/mypage/bakery',
+    name: 'RegistBakeryView',
+    component: () =>
+      import(
+        /* webpackChunkName: "mypage" */ '../views/userMyPage/RegistBakeryView.vue'
+      )
+  },
+  {
+    path: '/mypage/fvbread',
+    name: 'RegistFvBreadView',
+    component: () =>
+      import(
+        /* webpackChunkName: "mypage" */ '../views/userMyPage/RegistFvBreadView.vue'
+      )
+  },
+  {
+    path: '/mypage/user',
+    name: 'UserInfoUpdateView',
+    component: () =>
+      import(
+        /* webpackChunkName: "mypage" */ '../views/userMyPage/UserInfoUpdateView.vue'
+      )
   }
 ]
 
