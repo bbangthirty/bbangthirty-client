@@ -16,22 +16,26 @@
   --color-dark-grey: #4d4d4d;
 
   --color-light-grey: #7c7979;
+  --color-box-grey: #cdcaca;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
 
   /* Font size */
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
-  --font-small: 16px;
+  --font-large: 58px;
+  --font-medium: 38px;
+  --font-regular: 28px;
+  --font-small: 20px;
   --font-micro: 14px;
 
   /* Font weight */
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 20px;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -40,6 +44,7 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 html,
 body {
   height: 100%;
@@ -48,8 +53,12 @@ body {
 #app {
   height: 100%;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+>>>>>>> feature/mypage
 
 body {
+  font-family: 'Dongle', sans-serif;
   margin: 0px;
   background-color: var(--color-bread-b);
 }
@@ -68,6 +77,42 @@ li {
 
 button {
   cursor: pointer;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: var(--color-black);
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 4px 0;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -434,6 +479,7 @@ button {
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+<<<<<<< HEAD
 /* DongneRegistView.vue */
 .dongne-regist-container {
   display: flex;
@@ -507,4 +553,98 @@ button {
   border-radius: 10px;
   color: white;
   font-size: var(--font-regular);
+=======
+/* User MyPage */
+.mypage {
+  display: flex;
+  padding: 20px 20px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.mypage-side {
+  width: 22%;
+  height: 200px;
+  background-color: var(--color-bread-b);
+  margin-right: 30px;
+}
+
+.mypage-profile {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-box-grey);
+  border-radius: var(--size-border-radius);
+  height: 60px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.mypage-profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+  position: relative;
+  bottom: 15px;
+}
+
+.mypage-profile-name {
+  font-size: var(--font-small);
+  line-height: 22px;
+  padding-right: 10px;
+}
+
+.mypage-navbar {
+  background-color: var(--color-box-grey);
+  border-radius: var(--size-border-radius);
+  height: 180px;
+  padding: 10px 0 0 20px;
+}
+
+.mypage-navbar-menu {
+  padding: 5px 5px;
+  font-size: var(--font-small);
+}
+
+.mypage-main {
+  width: 88%;
+  height: 650px;
+  background-color: var(--color-box-grey);
+  border-radius: var(--size-border-radius);
+  padding: 0 30px;
+}
+
+.mypage-main-title {
+  padding-top: 5px;
+}
+
+/* DongneSettingView.vue */
+
+/* RegistFvBreadView.vue */
+.guide {
+  color: var(--color-bread-a);
+}
+
+.bread-tag-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bread-tag {
+  background-color: var(--color-light-white);
+  padding: 3px 15px;
+  margin: 7px 7px 7px 0px;
+  border-radius: 10px;
+  border: 2px solid var(--color-bread-a);
+  font-size: var(--font-small);
+}
+
+.bread-add {
+  width: 78.99px;
+  height: 40px;
+  background-color: var(--color-light-grey);
+  padding: 5px 15px;
+  margin: 7px;
+  border-radius: 10px;
+>>>>>>> feature/mypage
 }
