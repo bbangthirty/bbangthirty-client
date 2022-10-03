@@ -33,13 +33,14 @@ const routes = [
       )
   },
   {
-<<<<<<< HEAD
     path: '/dongne/landing/regist',
     name: 'DongneRegistView',
     component: () =>
       import(
         /* webpackChunkName: "user" */ '../views/userPage/DongneRegistView.vue'
-=======
+      )
+  },
+  {
     path: '/mypage',
     name: 'DongneSettingView',
     component: () =>
@@ -69,7 +70,6 @@ const routes = [
     component: () =>
       import(
         /* webpackChunkName: "mypage" */ '../views/userMyPage/UserInfoUpdateView.vue'
->>>>>>> feature/mypage
       )
   }
 ]
