@@ -552,6 +552,10 @@ p {
   font-size: var(--font-regular);
 }
 
+.modal-content {
+  background-color: var(--color-bread-b);
+}
+
 /* User MyPage */
 
 .mypage {
