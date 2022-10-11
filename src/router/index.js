@@ -33,6 +33,14 @@ const routes = [
       )
   },
   {
+    path: '/dongne/landing',
+    name: 'DongneStoreLoginedView',
+    component: () =>
+      import(
+        /* webpackChunkName: "user" */ '../views/userPage/DongneStoreLoginedView.vue'
+      )
+  },
+  {
     path: '/dongne/landing/regist',
     name: 'DongneRegistView',
     component: () =>

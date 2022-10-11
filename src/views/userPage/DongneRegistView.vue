@@ -94,7 +94,8 @@ export default {
     return {
       results: [],
       searchName: '',
-      flag: false
+      flag: false,
+      dong: []
     }
   },
   setup() {},
@@ -117,6 +118,7 @@ export default {
     },
     registDongne() {
       const a = this.searchName.split(' ')
+      this.dong[0] = a[a.length - 1]
       console.log(a[a.length - 1])
       this.searchName = ''
     }

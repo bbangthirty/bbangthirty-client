@@ -3,6 +3,7 @@
   <header-layout-one-logined v-if="$route.path === '/dongne/landing/regist'" />
   <header-layout-one-logined v-if="$route.path === '/mypage'" />
   <header-layout-two v-if="$route.path === '/dongne'" />
+  <header-layout-two-logined v-if="$route.path === '/dongne/landing'" />
   <router-view />
   <footer-layout />
 </template>
@@ -10,13 +11,15 @@
 import HeaderLayoutOne from '@/components/layouts/HeaderLayout1.vue'
 import HeaderLayoutOneLogined from '@/components/layouts/HeaderLayout1Logined.vue'
 import HeaderLayoutTwo from '@/components/layouts/HeaderLayout2.vue'
+import HeaderLayoutTwoLogined from '@/components/layouts/HeaderLayout2Logined.vue'
 import FooterLayout from '@/components/layouts/FooterLayout.vue'
 export default {
   components: {
     HeaderLayoutOne,
     HeaderLayoutTwo,
     FooterLayout,
-    HeaderLayoutOneLogined
+    HeaderLayoutOneLogined,
+    HeaderLayoutTwoLogined
   },
   data() {
     return {
