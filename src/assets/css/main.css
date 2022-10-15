@@ -556,6 +556,7 @@ p {
   background-color: var(--color-bread-b);
 }
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* User MyPage */
 
 .mypage {
@@ -626,6 +627,62 @@ p {
 }
 
 /* DongneSettingView.vue */
+.mypage-dongne-regist-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dcd1ca;
+  width: 90%;
+  height: 350px;
+  border-radius: 40px;
+  margin: 90px auto;
+  line-height: 80px;
+  color: var(--color-bread-a);
+}
+
+.mypage-dongne-regist-button-section-one {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.mypage-dongne-regist-button-section-one .btn-area1 {
+  position: relative;
+  background-color: var(--color-bread-a);
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mypage-dongne-regist-button-section-one .btn-area1 p {
+  font-size: var(--font-regular);
+}
+
+.mypage-dongne-regist-button-section-one .btn-area1 .x-mark {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.mypage-dongne-regist-button-section-one .btn-area2 {
+  background-color: gray;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: var(--font-medium);
+}
+
+.modal-content {
+  background-color: var(--color-bread-b);
+}
 
 /* RegistFvBreadView.vue */
 .guide {
@@ -647,10 +704,130 @@ p {
 }
 
 .bread-add {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 78.99px;
   height: 40px;
-  background-color: var(--color-light-grey);
+  background-color: var(--color-light-white);
   padding: 5px 15px;
   margin: 7px;
   border-radius: 10px;
 }
+
+/* RegistBakeryView.vue */
+.mypage-main-bakery {
+  width: 88%;
+  height: 700px;
+  background-color: var(--color-box-grey);
+  border-radius: var(--size-border-radius);
+  padding: 0 30px;
+}
+.regist-bakery-form {
+  margin-bottom: 10px;
+}
+
+.regist-bakery-form-title {
+  font-size: var(--font-small);
+}
+
+#store_detail {
+  width: 50%;
+}
+
+.send_code,
+.send_code_confirm,
+.address_search {
+  margin-left: 2px;
+}
+
+#store_address {
+  width: 40%;
+}
+
+#store_address_detail {
+  width: 40%;
+}
+
+#store_tel,
+#store_address_code,
+#store_address {
+  margin-bottom: 2px;
+}
+
+.brg-btn {
+  text-align: center;
+}
+
+.bakery-regist-button {
+  background-color: var(--color-bread-a);
+  color: var(--color-white);
+  width: 50px;
+  margin-top: 10px;
+}
+
+/* UserInfoUpdateView.vue */
+.user-info-update-container {
+  display: flex;
+}
+
+.user-info-title,
+.user-info-input {
+  font-size: var(--font-regular);
+}
+
+.user-info-title {
+  width: 150px;
+}
+
+.user-info-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-img-upload {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-img-update-button {
+  position: relative;
+  left: 250px;
+  top: 30px;
+  font-size: var(--font-small);
+  height: 35px;
+}
+
+.uiu-btn {
+  text-align: center;
+}
+
+.user-info-update-button,
+.user-info-delete-button {
+  background-color: var(--color-bread-a);
+  color: var(--color-white);
+  width: 80px;
+  margin: 5px;
+}
+
+.profile-img-update-button {
+  background-color: var(--color-bread-a);
+  color: var(--color-white);
+  width: 80px;
+  margin: 5px;
+}
+
+.mypage-profile-img-update {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+  position: relative;
+  margin: 3px;
+}
+
+.profile-img-regist-guide {
+  font-size: var(--font-small);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
