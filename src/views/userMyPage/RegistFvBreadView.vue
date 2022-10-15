@@ -25,7 +25,9 @@
       <div class="bread-tag-container">
         <div class="bread-tag">#소보루</div>
         <div class="bread-tag">#단팥빵</div>
-        <div class="bread-add"></div>
+        <div class="bread-add">
+          <font-awesome-icon icon="fa-solid fa-plus" />
+        </div>
       </div>
     </div>
   </div>
